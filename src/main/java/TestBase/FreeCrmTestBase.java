@@ -14,7 +14,7 @@ public class FreeCrmTestBase {
 
 	public FreeCrmTestBase() throws IOException {
 		Prop=new Properties();     
-	     String path="C:\\Users\\Dell\\eclipse-workspace\\SonalWithTestNg\\src\\main\\java\\Config\\crm\\credential\\Crm.Properties";
+	     String path="D:\\FinalFrameWorkClone\\finalFramework\\src\\main\\java\\Config\\crm\\credential\\Crm.Properties";
 	     FileInputStream fis =new FileInputStream(path);
 	     Prop.load(fis);
 	}
@@ -25,7 +25,7 @@ public static void initilization() {
 		
 		if(BrowserName.equalsIgnoreCase("chrome")) {
 			
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\Dell\\eclipse-workspace\\SonalWithTestNg\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","D:\\FinalFrameWorkClone\\finalFramework\\driver\\chromedriver.exe");
 			
 			
 			driver=new ChromeDriver();
