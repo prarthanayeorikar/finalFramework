@@ -83,6 +83,11 @@ public class HomePageCrm extends FreeCrmTestBase {
     	Print.click();
     	return new PrintPageCrm ();
     }
+    public FormsPageCrm clickOnFormssLink () throws IOException {
+    	Forms.click();
+    	return new FormsPageCrm();
+    }
+    
     public CampaignsPageCrm clickOnCampaigns() throws IOException {
     	Campaigns.click();
     	return new CampaignsPageCrm();
@@ -91,6 +96,7 @@ public class HomePageCrm extends FreeCrmTestBase {
     	Reports.click();
     	return new ReportsPageCrm();
     }
+    
     
     
 }
