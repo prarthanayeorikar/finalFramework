@@ -101,7 +101,7 @@ public class HomePageTest extends FreeCrmTestBase {
 		objTest_Util.frame("mainpanel");
 		objPrintPageCrm = objHomePageCrm.clickOnPrint();
 	}
-	public void clickOnFormssLink() throws IOException {
+	public void clickOnFormssLinksnewchange() throws IOException {
 		objTest_Util.frame("mainpanel");
 		objFormsPageCrm=objHomePageCrm.clickOnFormssLink();
 	}
