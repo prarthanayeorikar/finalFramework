@@ -54,6 +54,7 @@ public class HomePageCrm extends FreeCrmTestBase {
     	return new CalendarPageCrm();
     }
     
+    
     public CompaniesPageCrm clickOnCompaniesLink() throws IOException {
     	Companies.click();
     	return new CompaniesPageCrm();
@@ -85,6 +86,10 @@ public class HomePageCrm extends FreeCrmTestBase {
     public CampaignsPageCrm clickOnCampaigns() throws IOException {
     	Campaigns.click();
     	return new CampaignsPageCrm();
+    }
+    public ReportsPageCrm clickOnReportsLink () throws IOException {
+    	Reports.click();
+    	return new ReportsPageCrm();
     }
     
     

@@ -24,10 +24,10 @@ import TestBase.FreeCrmTestBase;
 import TestUtil.Test_Util;
 
 public class HomePageTest extends FreeCrmTestBase {
-	
+
 	FreeCrmTestBase objFreeCrmTestBase;
 	Test_Util objTest_Util;
-	LoginPageCrm objLoginPageCrm ;
+	LoginPageCrm objLoginPageCrm;
 	HomePageCrm objHomePageCrm;
 	CalendarPageCrm objCalendarPageCrm;
 	CallPageCrm objCallPageCrm;
@@ -42,59 +42,69 @@ public class HomePageTest extends FreeCrmTestBase {
 	ReportsPageCrm objReportsPageCrm;
 	TasksPageCrm objTasksPageCrm;
 	TextSMSCrmPage objTextSMSCrmPage;
-	
-	
-	
 
 	public HomePageTest() throws IOException {
-		
+
 	}
+
 	@BeforeMethod
 	public void setup() throws IOException {
 		initilization();
-		objTest_Util=new Test_Util();
-		objLoginPageCrm=new LoginPageCrm();
-	  objHomePageCrm=objLoginPageCrm.LoginApplication(Prop.getProperty("username"), Prop.getProperty("password"));
+		objTest_Util = new Test_Util();
+		objLoginPageCrm = new LoginPageCrm();
+		objHomePageCrm = objLoginPageCrm.LoginApplication(Prop.getProperty("username"), Prop.getProperty("password"));
 	}
+
 	@Test
 	public void clickOnContactLink() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objContactsPageCrm=objHomePageCrm.clickonContactsLink();
-		
+		objContactsPageCrm = objHomePageCrm.clickonContactsLink();
+
 	}
+
 	public void clickOnCalendarLink() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objCalendarPageCrm	=objHomePageCrm.clickOnCalendarLink();
+		objCalendarPageCrm = objHomePageCrm.clickOnCalendarLink();
 	}
+
 	public void clickOnCompaniesLink() throws Exception {
 		objTest_Util.frame("mainpanel");
-		objCompaniesPageCrm=objHomePageCrm.clickOnCompaniesLink();
+		objCompaniesPageCrm = objHomePageCrm.clickOnCompaniesLink();
 	}
+
 	public void clickOnDealLink() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objDealsPageCrm=objHomePageCrm.clickOnDealLink();
+		objDealsPageCrm = objHomePageCrm.clickOnDealLink();
 	}
+
 	public void clickOnTasksLink() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objTasksPageCrm=objHomePageCrm.clickOnTasksLink();
+		objTasksPageCrm = objHomePageCrm.clickOnTasksLink();
 	}
+
 	public void clickOnCasesLink() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objCasesPageCrm=objHomePageCrm.clickOnCasesLink();
+		objCasesPageCrm = objHomePageCrm.clickOnCasesLink();
 	}
+
 	public void clickOnCallLink() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objCallPageCrm=objHomePageCrm.clickOnCallLink();
+		objCallPageCrm = objHomePageCrm.clickOnCallLink();
 	}
+
 	public void clickOnTextSMS() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objTextSMSCrmPage=objHomePageCrm.clickOnTextSMS();
+		objTextSMSCrmPage = objHomePageCrm.clickOnTextSMS();
 	}
+
 	public void clickOnPrint() throws IOException {
 		objTest_Util.frame("mainpanel");
-		objPrintPageCrm=objHomePageCrm.clickOnPrint();
+		objPrintPageCrm = objHomePageCrm.clickOnPrint();
 	}
-	
-	
 
+	public void clickOnReprtPage() throws IOException {
+		objTest_Util.frame("mainpanel");
+		objReportsPageCrm = objHomePageCrm.clickOnReportsLink();
+
+	}
 }
